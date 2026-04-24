@@ -1,12 +1,12 @@
-class Person_nbs:
+class Person_jpa:
     def __init__(self_nbs, name_nbs, age_nbs):
         self_nbs.__name = name_nbs
         self_nbs.__age = age_nbs
 
-    def get_name_nbs(self_nbs):
+    def get_name_jpa(self_nbs):
         return self_nbs.__name
 
-    def get_age_nbs(self_nbs):
+    def get_age_jpa(self_nbs):
         return self_nbs.__age
 
 p1_nbs = Person_nbs("Maria", 20)
