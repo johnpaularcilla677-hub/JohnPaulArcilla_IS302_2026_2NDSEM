@@ -1,13 +1,13 @@
-class Student_nbs:
-    def __init__(self_nbs, name_nbs, student_id_nbs, gpa_nbs):
-        self_nbs.__name = name_nbs
-        self_nbs.__student_id = student_id_nbs
-        self_nbs.__gpa = gpa_nbs
+class Student_jpa:
+    def __init__(self_jpa, name_jpa, student_id_jpa, gpa_jpa):
+        self_jpa.__name = name_jpa
+        self_jpa.__student_id = student_id_jpa
+        self_jpa.__gpa = gpa_jpa
 
-    def get_student_info_nbs(self_nbs):
-        print("Name:", self_nbs.__name)
-        print("Student ID:", self_nbs.__student_id)
-        print("GPA:", self_nbs.__gpa)
+    def get_student_info_jpa(self_jpa):
+        print("Name:", self_jpa.__name)
+        print("Student ID:", self_jpa.__student_id)
+        print("GPA:", self_jpa.__gpa)
 
-student1_nbs = Student_nbs("Juan", "2023-001", 1.75)
-student1_nbs.get_student_info_nbs()
+student1_jpa = Student_jpa("Juan", "2023-001", 1.75)
+student1_jpa.get_student_info_jpa()
