@@ -1,33 +1,33 @@
-class Person_nbs:
-    def __init__(self_nbs, name_nbs, age_nbs):
-        self_nbs.name_nbs = name_nbs
-        self_nbs.age_nbs = age_nbs
+class Person_jpa:
+    def __init__(self_jpa, name_jpa, age_jpa):
+        self_nbs.name_jpa = name_jpa
+        self_nbs.age_jpa = age_jpa
 
-    def display_info_nbs(self_nbs):
-        print("Name:", self_nbs.name_nbs)
-        print("Age:", self_nbs.age_nbs)
+    def display_info_jpa(self_jpa):
+        print("Name:", self_jpa.name_jpa)
+        print("Age:", self_jpa.age_jpa)
 
-class Student_nbs(Person_nbs):
-    def __init__(self_nbs, name_nbs, age_nbs, course_nbs):
-        super().__init__(name_nbs, age_nbs)
-        self_nbs.course_nbs = course_nbs
+class Student_jpa(Person_jpa):
+    def __init__(self_jpa, name_jpa, age_jpa, course_jpa):
+        super().__init__(name_jpa, age_jpa)
+        self_jpa.course_jpa = course_jpa
 
-    def display_info_nbs(self_nbs):
-        super().display_info_nbs()
-        print("Course:", self_nbs.course_nbs)
+    def display_info_jpa(self_jpa):
+        super().display_info_jpa()
+        print("Course:", self_jpa.course_jpa)
 
-class Teacher_nbs(Person_nbs):
-    def __init__(self_nbs, name_nbs, age_nbs, subject_nbs):
-        super().__init__(name_nbs, age_nbs)
-        self_nbs.subject_nbs = subject_nbs
+class Teacher_nbs(Person_jpa):
+    def __init__(self_jpa, name_jpa, age_jpa, subject_jpa):
+        super().__init__(name_jpa, age_jpa)
+        self_nbs.subject_jpa = subject_jpa
 
-    def display_info_nbs(self_nbs):
-        super().display_info_nbs()
-        print("Subject:", self_nbs.subject_nbs)
+    def display_info_jpa(self_jpa):
+        super().display_info_jpa()
+        print("Subject:", self_jpa.subject_jpa)
 
 # Example usage
-student_nbs = Student_nbs("Maria", 20, "BSIS")
-teacher_nbs = Teacher_nbs("Mr. Smith", 45, "Mathematics")
+student_jpa = Student_jpa("Maria", 20, "BSIS")
+teacher_jpa = Teacher_jpa("Mr. Smith", 45, "Mathematics")
 
 print("Student Info:")
 student_nbs.display_info_nbs()
