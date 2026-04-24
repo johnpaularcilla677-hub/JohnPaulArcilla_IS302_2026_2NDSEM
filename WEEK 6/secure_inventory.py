@@ -1,22 +1,22 @@
-class Product_nbs:
-    def __init__(self_nbs, name_nbs, price_nbs, quantity_nbs):
-        self_nbs.__name = name_nbs
-        self_nbs.__price = price_nbs
-        self_nbs.__quantity = quantity_nbs
+class Product_jpa:
+    def __init__(self_jpa, name_jpa, price_jpa, quantity_jpa):
+        self_jpa.__name = name_jpa
+        self_jpa.__price = price_jpa
+        self_jpa.__quantity = quantity_jpa
 
-    def get_product_info_nbs(self_nbs):
-        print("Product:", self_nbs.__name)
-        print("Price:", self_nbs.__price)
-        print("Quantity:", self_nbs.__quantity)
+    def get_product_info_jpa(self_jpa):
+        print("Product:", self_jpa.__name)
+        print("Price:", self_jpa.__price)
+        print("Quantity:", self_jpa.__quantity)
 
-    def update_quantity_nbs(self_nbs, new_quantity_nbs):
-        if new_quantity_nbs >= 0:
-            self_nbs.__quantity = new_quantity_nbs
+    def update_quantity_jpa(self_jpa, new_quantity_jpa):
+        if new_quantity_jpa >= 0:
+            self_jpa.__quantity = new_quantity_jpa
 
-    def update_price_nbs(self_nbs, new_price_nbs):
-        if new_price_nbs > 0:
-            self_nbs.__price = new_price_nbs
+    def update_price_jpa(self_jpa, new_price_jpa):
+        if new_price_jpa > 0:
+            self_jpa.__price = new_price_jpa
 
 # Example usage
-product_nbs = Product_nbs("Laptop", 45000, 10)
-product_nbs.get_product_info_nbs()
+product_jpa = Product_jpa("Laptop", 45000, 10)
+product_jpa.get_product_info_jpa()
